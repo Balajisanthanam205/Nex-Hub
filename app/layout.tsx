@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Nex Hub - Student-led Freelancing Company",
   description:
     "Specializing in Web & Mobile App Development, AI/ML, Cybersecurity, Quantum Computing, and Enterprise Solutions",
-    generator: 'v0.dev'
+    generator: 'NEX HUB'
 }
 
 export default function RootLayout({
@@ -22,6 +22,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <link rel="icon" href="/tablogo.png" type="image/png" />
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <div className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white">
