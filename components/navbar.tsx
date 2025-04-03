@@ -5,6 +5,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -42,12 +43,18 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
-              Nex Hub
-            </span>
-          </Link>
+      <div className="flex items-center justify-between h-20">
+  <Link href="/" className="flex items-center">
+    <Image
+      src="/headlogo.png" // Make sure the image is placed in the public folder
+      alt="Nex Hub Logo"
+      width={120} // Adjust width as needed
+      height={40} // Adjust height as needed
+      className="object-contain"
+    />
+  </Link>
+
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">

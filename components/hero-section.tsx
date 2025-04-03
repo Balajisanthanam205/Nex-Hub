@@ -136,19 +136,43 @@ export default function HeroSection() {
             A student-led freelancing company specializing in cutting-edge technology solutions for the modern world.
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-col sm:flex-row justify-center gap-4"
-          >
-            <Button className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-lg px-8 py-6">
-              Get a Quote
-            </Button>
-            <Button variant="outline" className="border-purple-500 text-white hover:bg-purple-500/20 text-lg px-8 py-6">
-              Explore Services <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-          </motion.div>
+          <motion.div className="flex flex-col sm:flex-row justify-center gap-8">
+  {/* Get a Quote Button with Your Animation */}
+  <button className="get-quote-btn">
+    Get a Quote
+    <svg className="star-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path fill="#fffdef"  d="M12 2l1.9 6H20l-5 3.5 1.9 6L12 14l-4.9 3.5L9 11.5 4 8h6.1z" />
+    </svg>
+    <svg className="star-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path fill="#fffdef"  d="M12 2l1.9 6H20l-5 3.5 1.9 6L12 14l-4.9 3.5L9 11.5 4 8h6.1z" />
+    </svg>
+    <svg className="star-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path fill="#fffdef"  d="M12 2l1.9 6H20l-5 3.5 1.9 6L12 14l-4.9 3.5L9 11.5 4 8h6.1z" />
+    </svg>
+    <svg className="star-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path fill="#fffdef"  d="M12 2l1.9 6H20l-5 3.5 1.9 6L12 14l-4.9 3.5L9 11.5 4 8h6.1z" />
+    </svg>
+    <svg className="star-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path fill="#fffdef"  d="M12 2l1.9 6H20l-5 3.5 1.9 6L12 14l-4.9 3.5L9 11.5 4 8h6.1z" />
+    </svg>
+    <svg className="star-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path fill="#fffdef"  d="M12 2l1.9 6H20l-5 3.5 1.9 6L12 14l-4.9 3.5L9 11.5 4 8h6.1z" />
+    </svg>
+  </button>
+
+  {/* Explore Services Button (Same Size) */}
+  <button className="relative px-8 py-4 h-[50px] text-lg font-semibold border border-gray-800 bg-[#212121] text-[#ae00ff] uppercase tracking-wider overflow-hidden transition-all rounded-[20px] hover:shadow-[0_0_10px_#ae00ff,0_0_25px_#001eff,0_0_50px_#ae00ff] flex items-center justify-center">
+    Explore Services <ArrowRight className="ml-2 h-5 w-5" />
+    <span className="absolute top-0 left-[-100%] w-full h-[2px] bg-gradient-to-r from-transparent to-[#ae00ff]"></span>
+    <span className="absolute bottom-0 right-[-100%] w-full h-[2px] bg-gradient-to-r from-transparent to-[#001eff]"></span>
+    <span className="absolute top-[-100%] right-0 w-[2px] h-full bg-gradient-to-b from-transparent to-[#ae00ff]"></span>
+    <span className="absolute bottom-[-100%] left-0 w-[2px] h-full bg-gradient-to-t from-transparent to-[#001eff]"></span>
+  </button>
+</motion.div>
+
+
+
+
         </div>
       </div>
     </div>
